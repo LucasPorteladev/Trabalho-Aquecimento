@@ -92,6 +92,7 @@ A função segue o seguinte fluxo de execução:
 #                             Formatacao do Arquivo
 
 Para o codigo funcionar e necessario que o arquivo "input.mps" siga uma formatacao padrao, exemplo abaixo:
+
 ![Captura de tela de 2024-03-27 13-15-32](https://github.com/LucasPorteladev/Trabalho-Aquecimento/assets/112915278/f078137b-cb98-4c32-a45c-31ff093c15c6)
 
 #                            Compilacao e Execucao
