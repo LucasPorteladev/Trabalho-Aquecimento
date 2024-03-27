@@ -31,8 +31,6 @@ Nosso objetivo e criar um codigo que seja capaz de interpretar qualquer matriz i
 * input.mps (Contem a matriz de entrada do usuario)
 * geracoes.mps (Armazenara as matrizes de saida do programa)
 
-##                                     Conteudo das Classes
-
 ##                                        JogoDaVida.hpp
 
 ## Atributos
