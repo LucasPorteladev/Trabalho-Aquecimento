@@ -6,8 +6,8 @@ Este projeto tem como objetivo principal revisar os conceitos de manipulação d
 
 Neste jogo, teremos uma matriz contendo diversos elementos variando entre 0 ou 1:
 
-0 - Células Mortas
-1 - Células Vivas
+* [0] - Células Mortas
+* [1] - Células Vivas
 
 Nosso objetivo é criar um código que seja capaz de interpretar qualquer matriz inserida pelo usuário e retornar o resultado do jogo seguindo as regras abaixo:
 
