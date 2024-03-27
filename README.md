@@ -1,111 +1,98 @@
-#                        Trabalho de Aquecimento - Algoritmo e Estrutura de Dados
+## Trabalho de Aquecimento - Algoritmo e Estrutura de Dados
 
-## Objetivo do Projeto
+# Objetivo do Projeto
 
-Este projeto tem como objetivo principal revisar os conceitos de manipulação de matrizes, controle
-de fluxo e lógica de jogo.
+Este projeto tem como objetivo principal revisar os conceitos de manipulação de matrizes, controle de fluxo e lógica de jogo.
 
-Nesse jogo teremos uma matriz contendo diversos elemento variando entre 0 ou 1:
+Neste jogo, teremos uma matriz contendo diversos elementos variando entre 0 ou 1:
 
-* 0 - Celulas Mortas
-* 1 - Celulas Vivas
+0 - Células Mortas
+1 - Células Vivas
 
-Nosso objetivo e criar um codigo que seja capaz de interpretar qualquer matriz inserida pelo usuario e retorna o resultado do jogo seguindo as regras abaixo:
+Nosso objetivo é criar um código que seja capaz de interpretar qualquer matriz inserida pelo usuário e retornar o resultado do jogo seguindo as regras abaixo:
 
-* Uma celula viva com menos de dois vizinho morre (solidao).
-* Uma celula viva com mais de tres vizinhos morre (superpopulacao).
-* Uma celula viva com dois ou tres vivos sobrevive.
-* Uma celula morta com exatamente tres vizinhos vivos se torna viva (reproducao).
+* Uma célula viva com menos de dois vizinhos morre (solidão).
+* Uma célula viva com mais de três vizinhos morre (superpopulação).
+* Uma célula viva com dois ou três vivos sobrevive.
+* Uma célula morta com exatamente três vizinhos vivos se torna viva (reprodução).
 
-## Instrucoes do Projeto
+# Instruções do Projeto
 
 * Crie uma matriz N x N para representar um tabuleiro.
 * Inicialize a matriz com valores (0) ou 1.
-* Implemente uma funcao para gerar um relatorio de execucao, salvando a evolucao do jogo em um arquivo.
-
-##                                       Arquivos do Projeto
+* Implemente uma função para gerar um relatório de execução, salvando a evolução do jogo em um arquivo.
+  
+# Arquivos do Projeto
 
 * main.cpp
 * JogoDaVida.cpp
 * JogoDaVida.hpp
-* input.mps (Contem a matriz de entrada do usuario)
-* geracoes.mps (Armazenara as matrizes de saida do programa)
+* input.mps (Contém a matriz de entrada do usuário)
+* geracoes.mps (Armazenará as matrizes de saída do programa)
 
-##                                        JogoDaVida.hpp
+## JogoDaVida.hpp
 
-## Atributos
+# Atributos
 
-* linha: Salva o numero de linhas da matriz inserida.
-* coluna: Salva o numero de colunas da matriz inserida.
+* linha: Salva o número de linhas da matriz inserida.
+* coluna: Salva o número de colunas da matriz inserida.
 * matriz_original: Salva a matriz inserida.
-* matriz_copia: Armazenara as futuras geracoes do projeto.
-* geracoes: Salva o numero de geracoes que desejam ser criadas.
-* num: Apenas uma variavel auxiliar do codigo.
+* matriz_copia: Armazenará as futuras gerações do projeto.
+* geracoes: Salva o número de gerações que desejam ser criadas.
+* num: Apenas uma variável auxiliar do código.
 
-## Funcoes
+# Funções
 
 JogoDaVida(): Construtor da classe
 
-void leitura_arquivo(): Funcao responsavel por passar a matriz do arquivo "input.mps" para o atributo matriz_original
+void leitura_arquivo(): Função responsável por passar a matriz do arquivo "input.mps" para o atributo matriz_original
 
-int conta_vizinhos(): Funcao responsavel por contar quantos "1" tem ao redor de um espaco especifico da matriz.
+int conta_vizinhos(): Função responsável por contar quantos "1" tem ao redor de um espaço específico da matriz.
 
-void tratamento(): Funcao responsavel por aplicar todas as regras do projeto para a criacao da proxima geracao
+void tratamento(): Função responsável por aplicar todas as regras do projeto para a criação da próxima geração.
 
-void copia_matriz(): Funcao responsavel por copiar a matriz_copia para a matriz_original
+void copia_matriz(): Função responsável por copiar a matriz_copia para a matriz_original.
 
-void imprime_matriz(): Funcao responsavel por imprimir a matriz gerada no arquivo "geracoes.mps"
+void imprime_matriz(): Função responsável por imprimir a matriz gerada no arquivo "geracoes.mps".
 
-void verifica_exterminio(): Funcao responsavel por verificar se a matriz gerada contem apenas "0", se sim, o codigo e finalizado
+void verifica_exterminio(): Função responsável por verificar se a matriz gerada contém apenas "0"; se sim, o código é finalizado.
 
-void executar(): Funcao responsavel por executar todas as funcoes necessarias para o funcionamento do codigo
+void executar(): Função responsável por executar todas as funções necessárias para o funcionamento do código.
 
-##                                        JogoDaVida.cpp
+## JogoDaVida.cpp
 
-## void leitura_arquivo()
+void leitura_arquivo()
+Começa sua execução abrindo o arquivo para leitura e descarta a primeira linha. Logo após, entra em um ciclo for passando todos os valores presentes no arquivo para a matriz_original.
 
-Comeca sua execucao abrindo o arquivo para leitura e descarta a primeira linha, logo apos entra em um ciclo for passando todos os valores presentes no arquivo para a matriz_original.
+void tratamento()
+Começa sua execução declarando uma variável "vizinhos" que será importante. Logo após, entra em dois ciclos for e chama a função "conta_vizinhos". Após a função retornar um valor para a variável "vizinhos", temos 3 if's que têm como objetivo garantir o cumprimento das regras do trabalho.
 
-## void tratamento()
+int vizinhos()
+Começa sua execução declarando uma variável "vizinhos", depois entra em dois ciclos for que têm como objetivo ver todos os vizinhos do espaço de matriz analisado e incrementar o contador a cada "1" encontrado.
 
-Comeca sua execucao declarando uma variavel "vizinhos" que sera importante, logo apos entra em dois ciclos for e chama a funcao "conta_vizinhos". Apos a funcao retornar um valor para a variavel "vizinhos", temos 3 if`s que tem como objetivo garantir o cumprimento das regras do trabalho.
+void copia_matriz()
+Começa sua execução entrando em dois ciclos for que têm como objetivo passar a matriz_copia para a matriz_original.
 
-## int vizinhos()
+void imprime_matriz()
+Começa sua execução abrindo o arquivo "geracoes.mps" para escrita, escreve qual a geração gerada e entra em dois ciclos for utilizados para escrever toda a matriz no arquivo.
 
-Comeca sua execucao declarando uma variavel "vizinhos", depois entra em dois ciclos for que tem como objetivo ver todos os vizinhos do espaco de matriz analisado e incrementar o contador a cada "1" encontrado.
+void executar()
+A função segue o seguinte fluxo de execução:
 
-## void copia_matriz()
-
-Comeca sua execucao entrando em um dois ciclos for que tem como objetivo, passar a matriz_copia para a matriz_original.
-
-## void imprime_matriz()
-
-Comeca sua execucao abrindo o arquivo "geracoes.mps" para escrita, escreve qual a geracao gerada e entra em dois ciclos for utilizados para escrever toda a matriz no arquivo.
-
-## void executar()
-
-A funcao segue o seguinte fluxo de execucao:
-
-* Seta valores para atributos essenciais para o restante do codigo.
-* Inicializa as matrizes
-* Abre o arquivo "input.mps" para leitura e passa o conteudo do arquivo para a matriz.
-* Abre o arquivo "geracoes.mps" para escrita e passa o conteudo da matriz original para o arquivo.
-* Entra em um loop for que sera executado ate todas as geracoes serem criadas ou o jogo zerar completamente.
-* Insere a matriz original para tratamento, ou seja, aplicacao das regras para a criacao da proxima geracao.
-* Copia a matriz_copia para a matriz_original
-* Abre o arquivo "geracoes.mps" e escreve a geracao criada.
-* Verifica se houve exterminio, caso haja, encerra o processo.
-
+* Seta valores para atributos essenciais para o restante do código.
+* Inicializa as matrizes.
+* Abre o arquivo "input.mps" para leitura e passa o conteúdo do arquivo para a matriz.
+* Abre o arquivo "geracoes.mps" para escrita e passa o conteúdo da matriz original para o arquivo.
+* Entra em um loop for que será executado até todas as gerações serem criadas ou o jogo zerar completamente.
+* Insere a matriz original para tratamento, ou seja, aplicação das regras para a criação da próxima geração.
+* Copia a matriz_copia para a matriz_original.
+* Abre o arquivo "geracoes.mps" e escreve a geração criada.
+* Verifica se houve extermínio, caso haja, encerra o processo.
+  
 ##                             Formatacao do Arquivo
 
 Para o codigo funcionar e necessario que o arquivo "input.mps" siga uma formatacao padrao, exemplo abaixo:
-
-5 5 = Numero de linhas e colunas, respectivamente.
-1 0 0 0 1
-0 1 0 1 0
-1 0 1 0 0
-0 1 0 1 0
-0 0 1 0 1
+![Captura de tela de 2024-03-27 13-15-32](https://github.com/LucasPorteladev/Trabalho-Aquecimento/assets/112915278/f078137b-cb98-4c32-a45c-31ff093c15c6)
 
 ##                            Compilacao e Execucao
 
