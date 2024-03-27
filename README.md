@@ -1,6 +1,6 @@
-## Trabalho de Aquecimento - Algoritmo e Estrutura de Dados
+# Trabalho de Aquecimento - Algoritmo e Estrutura de Dados
 
-# Objetivo do Projeto
+## Objetivo do Projeto
 
 Este projeto tem como objetivo principal revisar os conceitos de manipulação de matrizes, controle de fluxo e lógica de jogo.
 
@@ -16,13 +16,13 @@ Nosso objetivo é criar um código que seja capaz de interpretar qualquer matriz
 * Uma célula viva com dois ou três vivos sobrevive.
 * Uma célula morta com exatamente três vizinhos vivos se torna viva (reprodução).
 
-# Instruções do Projeto
+## Instruções do Projeto
 
 * Crie uma matriz N x N para representar um tabuleiro.
 * Inicialize a matriz com valores (0) ou 1.
 * Implemente uma função para gerar um relatório de execução, salvando a evolução do jogo em um arquivo.
   
-# Arquivos do Projeto
+## Arquivos do Projeto
 
 * main.cpp
 * JogoDaVida.cpp
@@ -30,9 +30,9 @@ Nosso objetivo é criar um código que seja capaz de interpretar qualquer matriz
 * input.mps (Contém a matriz de entrada do usuário)
 * geracoes.mps (Armazenará as matrizes de saída do programa)
 
-## JogoDaVida.hpp
+# JogoDaVida.hpp
 
-# Atributos
+## Atributos
 
 * linha: Salva o número de linhas da matriz inserida.
 * coluna: Salva o número de colunas da matriz inserida.
@@ -41,7 +41,7 @@ Nosso objetivo é criar um código que seja capaz de interpretar qualquer matriz
 * geracoes: Salva o número de gerações que desejam ser criadas.
 * num: Apenas uma variável auxiliar do código.
 
-# Funções
+## Funções
 
 JogoDaVida(): Construtor da classe
 
@@ -59,7 +59,7 @@ void verifica_exterminio(): Função responsável por verificar se a matriz gera
 
 void executar(): Função responsável por executar todas as funções necessárias para o funcionamento do código.
 
-## JogoDaVida.cpp
+# JogoDaVida.cpp
 
 void leitura_arquivo()
 Começa sua execução abrindo o arquivo para leitura e descarta a primeira linha. Logo após, entra em um ciclo for passando todos os valores presentes no arquivo para a matriz_original.
@@ -89,12 +89,12 @@ A função segue o seguinte fluxo de execução:
 * Abre o arquivo "geracoes.mps" e escreve a geração criada.
 * Verifica se houve extermínio, caso haja, encerra o processo.
   
-##                             Formatacao do Arquivo
+#                             Formatacao do Arquivo
 
 Para o codigo funcionar e necessario que o arquivo "input.mps" siga uma formatacao padrao, exemplo abaixo:
 ![Captura de tela de 2024-03-27 13-15-32](https://github.com/LucasPorteladev/Trabalho-Aquecimento/assets/112915278/f078137b-cb98-4c32-a45c-31ff093c15c6)
 
-##                            Compilacao e Execucao
+#                            Compilacao e Execucao
 
 O código que simula o jogo: Jogo da Vida disponibilizado possui um arquivo Makefile que realiza todo o procedimento de compilação e execução. Para tanto, temos as seguintes diretrizes de execução:
 
