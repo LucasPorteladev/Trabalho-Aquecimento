@@ -89,11 +89,21 @@ A função segue o seguinte fluxo de execução:
 * Abre o arquivo "geracoes.mps" e escreve a geração criada.
 * Verifica se houve extermínio, caso haja, encerra o processo.
   
-#                             Formatacao do Arquivo
+##                             Formatacao do Arquivo
 
 Para o codigo funcionar e necessario que o arquivo "input.mps" siga uma formatacao padrao, exemplo abaixo:
 
 ![Captura de tela de 2024-03-27 13-15-32](https://github.com/LucasPorteladev/Trabalho-Aquecimento/assets/112915278/f078137b-cb98-4c32-a45c-31ff093c15c6)
+
+#                           Resultados Esperados
+
+## Matriz Inserida
+
+![Captura de tela de 2024-03-28 14-50-45](https://github.com/LucasPorteladev/Trabalho-Aquecimento/assets/112915278/c4c02bf2-6e8d-4809-a1ee-9e5c0f5a823b)
+
+## Resultado
+
+![Captura de tela de 2024-03-28 14-50-26](https://github.com/LucasPorteladev/Trabalho-Aquecimento/assets/112915278/19f2f32d-22c5-42d7-a191-82254e21209d)
 
 #                            Compilacao e Execucao
 
