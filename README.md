@@ -99,11 +99,13 @@ Para o codigo funcionar e necessario que o arquivo "input.mps" siga uma formatac
 
 ## Matriz Inserida
 
-![Captura de tela de 2024-03-28 14-50-45](https://github.com/LucasPorteladev/Trabalho-Aquecimento/assets/112915278/c4c02bf2-6e8d-4809-a1ee-9e5c0f5a823b)
+![Captura de tela de 2024-03-28 14-50-45](https://github.com/LucasPorteladev/Trabalho-Aquecimento/assets/112915278/c4c02bf2-6e8d-4809-a1ee-9e5c0f5a823b) ![Captura de tela de 2024-03-28 14-57-11](https://github.com/LucasPorteladev/Trabalho-Aquecimento/assets/112915278/fb38b67e-d3a5-4c18-aed3-0ecc88f33bd4)
+
 
 ## Resultado
 
-![Captura de tela de 2024-03-28 14-50-26](https://github.com/LucasPorteladev/Trabalho-Aquecimento/assets/112915278/19f2f32d-22c5-42d7-a191-82254e21209d)
+![Captura de tela de 2024-03-28 14-50-26](https://github.com/LucasPorteladev/Trabalho-Aquecimento/assets/112915278/19f2f32d-22c5-42d7-a191-82254e21209d) ![Captura de tela de 2024-03-28 14-56-47](https://github.com/LucasPorteladev/Trabalho-Aquecimento/assets/112915278/8322bb52-8d8e-4f5d-9ae9-0ff59b57d342)
+
 
 #                            Compilacao e Execucao
 
